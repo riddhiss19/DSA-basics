@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1660570173 source:d:\ds\binary_tree\main.c
+	<stdio.h>
+	<stdlib.h>
+

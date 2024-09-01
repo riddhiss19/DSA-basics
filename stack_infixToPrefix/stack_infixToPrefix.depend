@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1657287205 source:d:\ds\stack_infixtoprefix\main.c
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<stdlib.h>
+

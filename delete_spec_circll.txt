@@ -1,0 +1,67 @@
+void deleteSpecific(int delValue)
+{
+   if(head == NULL)
+      printf("List is Empty!!! Deletion not possible!!!");
+   else
+   {
+      struct Node *temp1 = head, temp2;
+      while(temp1 -> data != delValue)
+      {
+         if(temp1 -> next == head)
+         {
+            printf("\nGiven node is not found in the list!!!");
+            goto FuctionEnd;
+         }
+         else
+         {
+            temp2 = temp1;
+            temp1 = temp1 -> next;
+         }
+      }
+      if(temp1 -> next == head){
+         head = NULL;
+         free(temp1);
+      }
+      else{
+         if(temp1 == head)
+         {
+            temp2 = head;
+            while(temp2 -> next != head)
+               temp2 = temp2 -> next;
+            head = head -> next;
+            temp2 -> next = head;
+            free(temp1);
+         }
+         else
+         {
+            if(temp1 -> next == head)
+            {
+               temp2 -> next = head;
+            }
+            else
+            {
+               temp2 -> next = temp1 -> next;
+            }   
+            free(temp1);
+         }
+      }
+      printf("\nDeletion success!!!");
+   }
+   FuctionEnd:
+}
+
+void delete_node_at_specific (int value)	//function to delete any node from the list
+{
+  struct node *u, *v;
+  int delete, w = 0;
+  delete = value - 1;
+  u = headpt;
+  while (w != delete)
+    {
+      v = u;
+      u = u->nextpt;
+      w++;
+    }
+  v->nextpt = u->nextpt;
+  free (u);			//free node
+}

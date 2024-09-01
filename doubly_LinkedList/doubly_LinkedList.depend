@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1659963476 source:d:\ds\doubly_linkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+

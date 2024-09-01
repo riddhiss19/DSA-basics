@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1656941139 source:d:\ds\merge_sort\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1656941139 source:d:\gpn\ds\merge_sort\main.c
+	<stdio.h>
+	<stdlib.h>
+

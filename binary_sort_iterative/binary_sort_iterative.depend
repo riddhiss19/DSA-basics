@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1656594200 source:d:\ds\binary_sort_iterative\main.c
+	<stdio.h>
+	<stdlib.h>
+
